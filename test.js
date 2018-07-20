@@ -1,4 +1,4 @@
-const isPalind = str => {
+const isPalindrome = str => {
     let i = 0, j = str.length - 1, count = 0;
     while(count < str.length / 2) {
         if(str[i] !== str[j]) return false;
@@ -9,5 +9,6 @@ const isPalind = str => {
     return true;
 };
 
-console.log(isPalind("Paolo"));
-console.log(isPalind("madam"));
+console.log(isPalindrome("Paolo"));
+console.log(isPalindrome("madam"));
+console.log(isPalindrome("racecar"));
